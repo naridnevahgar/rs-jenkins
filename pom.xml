@@ -12,7 +12,7 @@
 	<artifactId>rs-jenkins</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>rs-jenkins</name>
-	<description>Demo project for jenkins automation</description>
+	<description>Demo project for jenkins automation with custom settings file</description>
 
 	<properties>
 		<java.version>1.8</java.version>
@@ -36,6 +36,14 @@
 			</exclusions>
 		</dependency>
 	</dependencies>
+
+	<distributionManagement>
+		<repository>
+			<id>snapshots</id>
+			<name>libs-snapshot</name>
+			<url>http://52.175.144.244:8081/artifactory/libs-snapshot</url>
+		</repository>
+	</distributionManagement>
 
 	<build>
 		<plugins>
