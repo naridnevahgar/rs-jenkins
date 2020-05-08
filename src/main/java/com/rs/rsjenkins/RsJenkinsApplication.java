@@ -15,6 +15,6 @@ public class RsJenkinsApplication {
 
 	@GetMapping("/")
 	public String greet() {
-		return "Hello, your SB app works!";
+		return "Hello, your SB app works! This greeting is from v2 app";
 	}
 }
